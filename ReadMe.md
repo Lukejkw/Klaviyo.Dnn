@@ -14,4 +14,5 @@ At the moment, the project will evolve as I need new features for my private pro
 
 ## Luke Warren Dev
 
-lukejkw
+[My Blog](//lukejkw.wordpress.com)
+[BitBucket](//bitbucket.org/lukejkw)
