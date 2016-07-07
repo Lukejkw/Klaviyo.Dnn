@@ -37,8 +37,8 @@ namespace Klaviyo.Dnn.Tests
         public void Cannot_Init_Listapi_With_Empty_ListToken_Or_PrivateKey()
         {
             // Invalid ctor calls
-            var api = new KlaviyoListApi(string.Empty, _listToken);
-            var api1 = new KlaviyoListApi(_privateApiKey, string.Empty);
+            Assert.That(() => new KlaviyoListApi(string.Empty, _listToken), Throws.Exception.TypeOf<ArgumentException>());
+            Assert.That(() => new KlaviyoListApi(_privateApiKey, string.Empty), Throws.Exception.TypeOf<ArgumentException>());
         }
 
         [Test]
